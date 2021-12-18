@@ -1,0 +1,65 @@
+<div>
+    <form action="so.php" method="post" enctype="multipart/form-data">
+        <table border="0">
+            <tr>
+                 <td colspan="8">TITLE</td>
+            </tr>
+            <tr>
+                <td>choose file</td>
+				<td> : </td>
+				<td><input type="file" value="file"  name="doc" id="doc"/></td>
+				<td>TDA2003.pdf, <br>1N4001.pdf,<br>9014.pdf</td>
+            </tr>
+            <tr>
+                <td>No Seri</td>
+				<td> : </td>
+				<td><input type="text" name="no_seri"/></td>
+				<td>TDA2003, 1N4001, 9014</td>
+            </tr> 
+            <tr>
+                <td>Nama</td>
+				<td> : </td>
+				<td>
+                    <select name="nama">
+                        <option value="IC">INTEGRATED CIRCUIT</option> 
+                        <option value="DIODA">DIODA</option>
+                        <option value="TRANSISTOR">TRANSISTOR</option>
+                    </select>
+                </td>
+                <td>TDA2003A/B/C, <br>1N4001A/B/C, <br>9014C/D/E</td>
+            </tr>
+			<tr>
+				<td>Kategori</td>
+				<td> : </td>
+				<td><input type="text" name="kategori"/></td>
+				<td>Diode (Rectifier, Zener, Shotky, etc)<br> Transistor (Power, RF Amp)<br> Integrated Circuit (Power Amp, Pre Amp)</td>
+			</tr>
+			<tr>
+				<td>Tipe</td>
+				<td> : </td>
+				<td><input type="text" name="tipe"/></td>
+				<td>Transistor (PNP, NPN, N-Chanel, P-Chanel) </td>
+			</tr>
+			<tr>
+				<td>Jenis</td>
+				<td> : </td>
+				<td><input type="text" name="jenis"/></td>
+				<td>Diode (Silicone, Germanium)<br>Transistor (Bipolar, MOSFET, BJT, JFET)</td>
+			</tr>
+			<tr>
+				<td>Include</td>
+				<td> : </td>
+				<td><input type="text" name="included"/></td>
+				<td>DIODA, <br>TRANSISTOR,<br> INTEGRATED CIRCUIT</td>
+			</tr>
+			<tr>
+				<td>Descriptions</td>
+				<td> : </td>
+				<td colspan="2"><textarea name="descriptions" rows="1" cols="50"></textarea></td>
+			</tr>
+            <tr>
+                <td colspan="8"><input type="submit" value="kirim"/></td>
+            </tr>
+        </table>
+    </form>
+</div>
